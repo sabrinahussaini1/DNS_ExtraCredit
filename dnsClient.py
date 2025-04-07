@@ -6,7 +6,7 @@ import struct
         # 1. https://datatracker.ietf.org/doc/html/rfc1034
         # 2. https://datatracker.ietf.org/doc/html/rfc1035
         # 3. Kurose/Ross Book!
-
+dddd
 def dns_query(type, name, server):
     # Create a UDP socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
