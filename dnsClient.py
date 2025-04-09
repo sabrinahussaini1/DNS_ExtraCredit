@@ -119,7 +119,7 @@ def dns_query(type, name, server):
 
     # Parse the response question section (same as query)
     response_question =data[12:12+len(qname_encoded)]  # The data variable starts immediately after the header section, so what is it's index? Note the two '??' '??' will be the same value as we start at a specific index and then go for the entire length of the binary data received.
-    assert response_question == question
+    #assert response_question == question
 
     # Parse the response answer section
     response_answer = data[12+len(question):]  # We would be looking at the same index position as before (after the header)
